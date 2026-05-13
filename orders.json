@@ -1,0 +1,15 @@
+[
+    {
+        "serialcode": "T90",
+        "item": "Aluminum Trays",  
+        "quantity": 4,
+        "price": 3.2
+    },
+
+    {
+        "serialcode": "S230",
+        "item": "Beef Sirlion steak",  
+        "quantity": 4,
+        "price": 4.9
+    }
+]
