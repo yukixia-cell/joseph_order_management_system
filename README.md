@@ -4,7 +4,7 @@ Order items to call up input Functions your node modules and display output func
 
 
 
-| Functions   | Description                                   | Code    |            Fields                   | 
+| Left-aligned | Center-aligned | price | Fields | 
 | addtoOrder  | To Add to order to push a new item            |         |  serialcode, item, quantity, price |
 |getAllOrders | To retrieve all orders                        |         |  No Required Fields |
 
