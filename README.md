@@ -36,6 +36,12 @@ For addtoorder function with logic:
                     console.log(`Successfully added ${item}`);
                 },
 
+For getAllOrders function with logic :
+
+             getAllOrders: function() {
+                    return this.orders;
+                },
+
 # References
 
 https://sitegiant.sg/order-management/
