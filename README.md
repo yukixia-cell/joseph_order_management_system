@@ -42,6 +42,27 @@ For getAllOrders function with logic :
                     return this.orders;
                 },
 
+For updateOrders function with logic :
+
+             updateOrder: function (index,item, newQty, newPrice) {
+                    if (this.orders[index]) {
+                        this.orders[index].item = item;
+                        this.orders[index].quantity = newQty;
+                        this.orders[index].price = newPrice;
+                        console.log(`Update orders at ${index} and ${item}`);
+                    } else {
+                        console.log('No Orders available')
+                    }
+                },
+
+For Delete function with logic :
+
+             deleteOrder: function (index) {
+                    if (index > - 1 && index < this.orders.length) {
+                        let removed = this.orders.splice(index, 1);
+                        console.log(`Delete order item: ${removed[0].item}`)
+                    }
+                },
 # References
 
 https://sitegiant.sg/order-management/
