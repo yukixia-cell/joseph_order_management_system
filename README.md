@@ -4,9 +4,15 @@ Order items to call up input Functions your node modules and display output func
 
 
 
-| Left-aligned | Center-aligned | price | Fields | 
+| Function | Description | Code  | Fields | 
 | :---         |     :---:      | :----: |          ---: |
-| addtoOrder  | To Add to order to push a new item            |         |  serialcode, item, quantity, price |
+| addtoOrder  | To Add to order to push a new item            |    let newOrder = {
+            serialcode: serialcode,
+            item: item,
+            quantity: quantity,
+            price: price,
+        }
+        this.orders.push(newOrder);      |  serialcode, item, quantity, price |
 |getAllOrders | To retrieve all orders                        |         |  No Required Fields |
 
 
