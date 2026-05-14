@@ -108,25 +108,25 @@ To display order tables:
 
 # Output in Ordering Items in E-Commerce
 
-|-----Order Lists-----
-┌─────────┬────────────┬──────────────────────┬──────────┬───────┐
-│ (index) │ serialcode │ item                 │ quantity │ price │
-├─────────┼────────────┼──────────────────────┼──────────┼───────┤
-│ 0       │ 'T30'      │ 'FireWood Setter'    │ 3        │ 7.5   │
-│ 1       │ 'R369'     │ 'Table Ice Diamond'  │ 3        │ 9.6   │
-│ 2       │ 'T95L'     │ 'Beef Angus Sirloin' │ 2        │ 10.3  │
-│ 3       │ 'T443'     │ 'Fish Red Snapper'   │ 3        │ 7.3   │
-│ 4       │ 'J90'      │ 'kinki rockfish'     │ 5        │ 6.2   │
-│ 5       │ 'A78'      │ 'Atlantic Salmon'    │ 5        │ 7.68  │
-└─────────┴────────────┴──────────────────────┴──────────┴───────┘
-|----Receipt----|
-|----E-Commerce Checkout----|
-
-Total value: $163.20
-
-Checkout Process after Payment:
-
-Total process checkout: $167.40
+            |-----Order Lists-----
+            ┌─────────┬────────────┬──────────────────────┬──────────┬───────┐
+            │ (index) │ serialcode │ item                 │ quantity │ price │
+            ├─────────┼────────────┼──────────────────────┼──────────┼───────┤
+            │ 0       │ 'T30'      │ 'FireWood Setter'    │ 3        │ 7.5   │
+            │ 1       │ 'R369'     │ 'Table Ice Diamond'  │ 3        │ 9.6   │
+            │ 2       │ 'T95L'     │ 'Beef Angus Sirloin' │ 2        │ 10.3  │
+            │ 3       │ 'T443'     │ 'Fish Red Snapper'   │ 3        │ 7.3   │
+            │ 4       │ 'J90'      │ 'kinki rockfish'     │ 5        │ 6.2   │
+            │ 5       │ 'A78'      │ 'Atlantic Salmon'    │ 5        │ 7.68  │
+            └─────────┴────────────┴──────────────────────┴──────────┴───────┘
+            |----Receipt----|
+            |----E-Commerce Checkout----|
+            
+            Total value: $163.20
+            
+            Checkout Process after Payment:
+            
+            Total process checkout: $167.40
 
     
 # References
