@@ -20,12 +20,16 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 
 # Code for Functions:
 
-let newOrder = {
-            serialcode: serialcode,
-            item: item,
-            quantity: quantity,
-            price: price,
-        }
+                        addtoOrder: function (serialcode, item, quantity, price) {
+                                let newOrder = {
+                                    serialcode: serialcode,
+                                    item: item,
+                                    quantity: quantity,
+                                    price: price,
+                                }
+                                this.orders.push(newOrder);
+                                console.log(`Successfully added ${item}`);
+                            },
 
 # References
 
