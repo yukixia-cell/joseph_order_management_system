@@ -4,11 +4,15 @@ Order items to call up input Functions your node modules and display output func
 
 No set up required
 
+
 Function of orders: orders: []
+
 
 addtoOrder: require function fields - serialcode, item, quantity, price, use letnewOrder, and use this.orders.push(newOrder)
 
+
 getAllOrders: No field Required - function () { return this.orders;}
+
 
 updateOrder: field required - index, item, newQty, newPrice, 
 To update on updateOrder quantity and price in Update order use : if (this.orders[index]) {
@@ -27,10 +31,12 @@ logic for deleteOrder use if else : if (index > - 1 && index < this.orders.lengt
 
 
 calculateTotalValue: no required fields in function()
-uses let total and forEach: this.orders.forEach(orders => {
+uses let total and forEach:
+this.orders.forEach(orders => {
                             total += (orders.quantity * orders.price);
                             });
                             return total.toFixed(2);
+                            
 
 calculateOrderProcess: no required in function ()
 use the foreach
@@ -42,6 +48,7 @@ require variable on let - total, discount,
               // discountprice = total - discounted;
               totalprice = (total - discounted) + shipping;
           });
+
 
   displayOrderTables: no required in function()
   use if else logic:
@@ -63,5 +70,7 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 # References
 
 https://sitegiant.sg/order-management/
+
 https://www.clarionshipping.com/en-sg/service/ecommerce-fulfillment/
+
 https://www.shopify.com/sg/
