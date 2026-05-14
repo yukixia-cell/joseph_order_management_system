@@ -93,6 +93,19 @@ To Calculate Order Process Shipping and discount:
                     return totalprice.toFixed(2);
                 },
 
+To display order tables:
+
+                displayOrderTables: function () {
+                    console.log('\n|-----Order Lists-----');
+                    // Using a console table for a clean JS output
+                    if (this.orders.length === 0) {
+                        console.log('No available orders');
+                    } else {
+                        console.table(this.orders);
+                    }
+                }
+            }
+
     
 # References
 
