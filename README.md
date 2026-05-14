@@ -5,16 +5,22 @@ Order items to call up input Functions your node modules and display output func
 No set up required
 
 
-Function of orders: orders: []
+Function of orders: orders: [] - to display the json table with orders
 
 
-addtoOrder: require function fields - serialcode, item, quantity, price, use letnewOrder, and use this.orders.push(newOrder)
+addtoOrder: require function fields - serialcode, item, quantity, price, use letnewOrder, and use this.orders.push(newOrder), to add new orders
 
 
-getAllOrders: No field Required - function () { return this.orders;}
 
 
-updateOrder: field required - index, item, newQty, newPrice, 
+getAllOrders: No field Required - function () { return this.orders;}, to push in a new order
+
+
+
+
+updateOrder: field required - index, item, newQty, newPrice - to update a new item on index number with new price and new quantity
+
+For Example:
 To update on updateOrder quantity and price in Update order use : if (this.orders[index]) {
                                                     this.orders[index].item = item;
                                                     this.orders[index].quantity = newQty;
@@ -22,23 +28,34 @@ To update on updateOrder quantity and price in Update order use : if (this.order
                                                   }
 
 
+
           
-deleteOrder: field required - index
+deleteOrder - field required index: to Delete an item table with index number
+
+For example of this
+
 logic for deleteOrder use if else : if (index > - 1 && index < this.orders.length) {
                                         let removed = this.orders.splice(index, 1);
                                         console.log(`Delete order item: ${removed[0].item}`)
                                     }
+                                    
 
 
-calculateTotalValue: no required fields in function()
+calculateTotalValue: no required fields in function()  To calculate the total price of the items
+
+For example
 uses let total and forEach:
 this.orders.forEach(orders => {
                             total += (orders.quantity * orders.price);
                             });
                             return total.toFixed(2);
+
+                            
                             
 
-calculateOrderProcess: no required in function ()
+calculateOrderProcess: no required in function (), 
+
+For example: 
 use the foreach
 require variable on let - total, discount,
               this.orders.forEach(orders => {
@@ -66,6 +83,41 @@ Then, run on nodemon app.js on the terminal
 You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
 
 For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+# output
+
+
+Added items:
+
+Initializing Order Online Process!
+Successfully added FireWood Setter
+Successfully added Table Ice Diamond
+Successfully added Beef Angus Sirloin
+Successfully added Fish Red Snapper
+Successfully added kinki rockfish
+Successfully added Atlantic Salmon
+Successfully added Yoyo Super
+
+
+|-----Order Lists-----
+┌─────────┬────────────┬──────────────────────┬──────────┬───────┐
+│ (index) │ serialcode │ item                 │ quantity │ price │
+├─────────┼────────────┼──────────────────────┼──────────┼───────┤
+│ 0       │ 'T30'      │ 'FireWood Setter'    │ 3        │ 7.5   │
+│ 1       │ 'R369'     │ 'Table Ice Diamond'  │ 3        │ 9.6   │
+│ 2       │ 'T95L'     │ 'Beef Angus Sirloin' │ 2        │ 10.3  │
+│ 3       │ 'T443'     │ 'Fish Red Snapper'   │ 3        │ 7.3   │
+│ 4       │ 'J90'      │ 'kinki rockfish'     │ 5        │ 6.2   │
+│ 5       │ 'A78'      │ 'Atlantic Salmon'    │ 5        │ 7.68  │
+└─────────┴────────────┴──────────────────────┴──────────┴───────┘
+|----Receipt----|
+|----E-Commerce Checkout----|
+
+Total value: $163.20
+
+Checkout Process after Payment:
+
+Total process checkout: $167.40
 
 # References
 
