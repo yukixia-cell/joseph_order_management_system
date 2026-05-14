@@ -16,8 +16,7 @@ You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live 
 
 For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-# output
-
+# Code for Functions:
 Initializing Order Online Process!
 Successfully added FireWood Setter
 Successfully added Table Ice Diamond
@@ -52,6 +51,8 @@ Updated Tables:
 │ 2       │ 'T95L'     │ 'Beef Angus Sirloin' │ 2        │ 10.3  │
 │ 3       │ 'T443'     │ 'Fish Red Snapper'   │ 3        │ 7.3   │
 │ 4       │ 'J90'      │ 'kinki rockfish'     │ 5        │ 6.2   │
+│ 3       │ 'T443'     │ 'Fish Red Snapper'   │ 3        │ 7.3   │
+│ 4       │ 'J90'      │ 'kinki rockfish'     │ 5        │ 6.2   │
 │ 5       │ 'A78'      │ 'Atlantic Salmon'    │ 5        │ 7.68  │
 │ 6       │ 'R670'     │ 'Yoyo Super'         │ 2        │ 12    │
 └─────────┴────────────┴──────────────────────┴──────────┴───────┘
@@ -76,6 +77,8 @@ Total value: $163.20
 Checkout Process after Payment:
 
 Total process checkout: $167.40
+
+
 
 
 # References
