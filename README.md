@@ -12,6 +12,7 @@ Order items to call up input Functions your node modules and display output func
 |deleteOrder | To delete the order with the index of the item from order table | index |
 |calculateTotalValue | To calculate the total value price of the items and multiply quantity | No Required Fields | 
 | calculateOrderProcess| To calculate the full total price with shipping charges, and discounted in process order | No required order|
+| displayOrderTables | To display the order Tables in order list in the e-commerce cart| no fields |
 
 
 
