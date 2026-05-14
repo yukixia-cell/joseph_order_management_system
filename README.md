@@ -19,7 +19,7 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 
 # Code for Functions:
 
-addtoOrder: function (serialcode, item, quantity, price) {
+function (serialcode, item, quantity, price) {
         let newOrder = {
             serialcode: serialcode,
             item: item,
