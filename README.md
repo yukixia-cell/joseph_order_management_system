@@ -63,6 +63,37 @@ For Delete function with logic :
                         console.log(`Delete order item: ${removed[0].item}`)
                     }
                 },
+
+To calculate the total value of price:
+
+             calculateTotalValue: function () {
+                    let total = 0;
+                    this.orders.forEach(orders => {
+                        total += (orders.quantity * orders.price);
+                    });
+                    return total.toFixed(2);
+                },
+
+
+To Calculate Order Process Shipping and discount:
+
+            calculateOrderProcess: function () {
+                    let total = 0;
+                    let goodservicetax = 0;
+                    let discount = 0.25;
+                    this.orders.forEach(orders => {
+                        total += (orders.quantity * orders.price);
+                        discounted = total * discount;
+                        shipping = 15 * 5 *3 / 5
+                        // discountprice = total - discounted;
+                        totalprice = (total - discounted) + shipping;
+                    });
+                   // return discountprice.toFixed(2);
+            
+                    return totalprice.toFixed(2);
+                },
+
+    
 # References
 
 https://sitegiant.sg/order-management/
