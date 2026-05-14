@@ -16,6 +16,9 @@ To update on updateOrder quantity and price in Update order use : if (this.order
                                                     this.orders[index].quantity = newQty;
                                                     this.orders[index].price = newPrice;
                                                   }
+
+
+          
 deleteOrder: field required - index
 logic for deleteOrder use if else : if (index > - 1 && index < this.orders.length) {
                                         let removed = this.orders.splice(index, 1);
