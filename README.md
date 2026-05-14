@@ -6,7 +6,7 @@ Order items to call up input Functions your node modules and display output func
 
 | Functions   | Description                                   | Code    |            Fields                   | 
 | addtoOrder  | To Add to order to push a new item            |         |  serialcode, item, quantity, price |
-|getAllOrders | To retrieve all orders                        |         |  No Required Fields
+|getAllOrders | To retrieve all orders                        |         |  No Required Fields |
 
 
 You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
