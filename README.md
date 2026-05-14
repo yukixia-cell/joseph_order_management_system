@@ -4,10 +4,10 @@ Order items to call up input Functions your node modules and display output func
 
 
 
-| Function | Description | Code  | Fields | 
-| :---         |     :---:      | :----: |          ---: |
-| addtoOrder  |      To add a new orders in a new item        |         |               | 
-|getAllOrders | To retrieve all orders                        |         |  No Required Fields |
+| Function | Description| Fields | 
+| :---         |     :---:                                |          ---: |
+| addtoOrder  | To add a new orders in a new item        |                        | 
+|getAllOrders | To retrieve all orders                    |           No Required Fields |
 
 
 You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
