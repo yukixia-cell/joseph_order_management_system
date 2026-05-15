@@ -6,13 +6,13 @@ Order items to call up input Functions your node modules and display output func
 
 | Function | Description| Fields | 
 | :---         |     :---:                                |          ---: |
-| addtoOrder  | To add a new orders in a new item        |        No fields                | 
-|getAllOrders | To retrieve all orders                    |           No Required Fields |
-|updateOrder | To Update the Order with the index of the item with new qty and price | index, item, newQty, newPrice|
-|deleteOrder | To delete the order with the index of the item from order table | index |
-|calculateTotalValue | To calculate the total value price of the items and multiply quantity | No Required Fields | 
-| calculateOrderProcess| To calculate the full total price with shipping charges, and discounted in process order | No required order|
-| displayOrderTables | To display the order Tables in order list in the e-commerce cart| no fields |
+| addtoOrder : function (serialcode, item, quantity, price)  | To add a new orders in a new item        |        No fields                | 
+|getAllOrders : function () | To retrieve all orders                    |           No Required Fields |
+|updateOrder : function (index, item, newQty, newPrice) | To Update the Order with the index of the item with new qty and price | index, item, newQty, newPrice|
+|deleteOrder : function (index) | To delete the order with the index of the item from order table | index |
+|calculateTotalValue : function () | To calculate the total value price of the items and multiply quantity | No Required Fields | 
+| calculateOrderProcess : function ()| To calculate the full total price with shipping charges, and discounted in process order | No required order|
+| displayOrderTables : function () | To display the order Tables in order list in the e-commerce cart| no fields |
 
 
 
@@ -106,6 +106,72 @@ To display order tables:
                 }
             }
 
+
+            const ecommerce = require('./josephyeow_webapi.js')
+            
+            console.log("Initializing Order Online Process!");
+            
+            ecommerce.addtoOrder("T30", "FireWood Setter", 3, 7.5);
+            ecommerce.addtoOrder("R369", "Table Ice Diamond", 3, 9.60);
+            ecommerce.addtoOrder("T95L", "Beef Angus Sirloin", 2, 10.30);
+            ecommerce.addtoOrder("T443", "Fish Red Snapper", 3, 7.30);
+            ecommerce.addtoOrder("J90", "kinki rockfish", 4, 8.90);
+            ecommerce.addtoOrder("A78", "Atlantic Salmon", 4, 8.90);
+            ecommerce.addtoOrder("R670", "Yoyo Super", 2, 12.00);
+            
+            ecommerce.displayOrderTables();
+            
+            
+            ecommerce.updateOrder(4, "kinki rockfish", 5, 6.20);
+            ecommerce.updateOrder(5, "Atlantic Salmon", 5, 7.68);
+            
+            console.log("Updated Tables:");
+            
+            ecommerce.displayOrderTables();
+            
+            
+            ecommerce.deleteOrder(6);
+            
+            ecommerce.displayOrderTables();
+
+# Calculate Total Price, and Total Order Process Payment
+
+             calculateTotalValue: function () {
+                    let total = 0;
+                    this.orders.forEach(orders => {
+                        total += (orders.quantity * orders.price);
+                    });
+                    return total.toFixed(2);
+                },
+            
+                calculateOrderProcess: function () {
+                    let total = 0;
+                    let goodservicetax = 0;
+                    let discount = 0.25;
+                    this.orders.forEach(orders => {
+                        total += (orders.quantity * orders.price);
+                        discounted = total * discount;
+                        shipping = 15 * 5 *3 / 5
+                        // discountprice = total - discounted;
+                        totalprice = (total - discounted) + shipping;
+                    });
+                   // return discountprice.toFixed(2);
+            
+                    return totalprice.toFixed(2);
+                },
+            
+                displayOrderTables: function () {
+                    console.log('\n|-----Order Lists-----');
+                    // Using a console table for a clean JS output
+                    if (this.orders.length === 0) {
+                        console.log('No available orders');
+                    } else {
+                        console.table(this.orders);
+                    }
+                }
+
+            
+
 # Output in Ordering Items in E-Commerce
 
             Initializing Order Online Process!
@@ -169,6 +235,18 @@ To display order tables:
             
             Total process checkout: $167.40
 
+# Setup begin
+
+1. Clone Repository
+
+2. Rename file on lab2_webapi_assignment1
+
+3. Ensure node js is installed
+
+4. Run the Node by node app.js
+
+
+   
     
 # References
 
