@@ -134,43 +134,18 @@ To display order tables:
             
             ecommerce.displayOrderTables();
 
-# Calculate Total Price, and Total Order Process Payment
+# Display values after run node app.js Calculate Total Price, and Order Total Total price on E-Commerce Order Processing
 
-             calculateTotalValue: function () {
-                    let total = 0;
-                    this.orders.forEach(orders => {
-                        total += (orders.quantity * orders.price);
-                    });
-                    return total.toFixed(2);
-                },
+            console.log("|----Receipt----|");
+            console.log("|----E-Commerce Checkout----|");
+            console.log("");
+            console.log('Total value: $' + ecommerce.calculateTotalValue());
             
-                calculateOrderProcess: function () {
-                    let total = 0;
-                    let goodservicetax = 0;
-                    let discount = 0.25;
-                    this.orders.forEach(orders => {
-                        total += (orders.quantity * orders.price);
-                        discounted = total * discount;
-                        shipping = 15 * 5 *3 / 5
-                        // discountprice = total - discounted;
-                        totalprice = (total - discounted) + shipping;
-                    });
-                   // return discountprice.toFixed(2);
+            console.log("");
+            console.log("Checkout Process after Payment:");
+            console.log("");
             
-                    return totalprice.toFixed(2);
-                },
-            
-                displayOrderTables: function () {
-                    console.log('\n|-----Order Lists-----');
-                    // Using a console table for a clean JS output
-                    if (this.orders.length === 0) {
-                        console.log('No available orders');
-                    } else {
-                        console.table(this.orders);
-                    }
-                }
-
-            
+            console.log("Total process checkout: $" + ecommerce.calculateOrderProcess());
 
 # Output in Ordering Items in E-Commerce
 
