@@ -106,6 +106,8 @@ To display order tables:
                 }
             }
 
+            
+# For Setup the Input
 
             const ecommerce = require('./josephyeow_webapi.js')
             
@@ -210,7 +212,7 @@ To display order tables:
             
             Total process checkout: $167.40
 
-# Setup begin
+# Requirements
 
 1. Clone Repository
 
