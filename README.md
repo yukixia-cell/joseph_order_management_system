@@ -132,7 +132,7 @@ To display order tables:
             
             ecommerce.displayOrderTables();
 
-# Display values after run node app.js Calculate Total Price, and Order Total Total price on E-Commerce Order Processing
+# Displays Calculate Total Price, and Total process Checkout after run node app.js
 
             console.log("|----Receipt----|");
             console.log("|----E-Commerce Checkout----|");
