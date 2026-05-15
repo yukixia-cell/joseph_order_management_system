@@ -6,7 +6,7 @@ Order items to call up input Functions your node modules and display output func
 
 | Function | Description| Fields | 
 | :---         |     :---:                                |          ---: |
-| addtoOrder : function (serialcode, item, quantity, price)  | To add a new orders in a new item        |        No fields                | 
+| addtoOrder : function (serialcode, item, quantity, price)  | To add a new orders in a new item        |   serialcode, item, quantity, price| 
 |getAllOrders : function () | To retrieve all orders                    |           No Required Fields |
 |updateOrder : function (index, item, newQty, newPrice) | To Update the Order with the index of the item with new qty and price | index, item, newQty, newPrice|
 |deleteOrder : function (index) | To delete the order with the index of the item from order table | index |
